@@ -356,194 +356,194 @@ buy2.addEventListener("click", function () {
   }
 });
 
-let cardImg = document.querySelectorAll(".card-img img");
-let input = document.querySelector(".input");
-let methodtext = document.querySelector(".method-text");
-let newDIV = document.querySelector(".new");
-let paypal = document.getElementById("pay-pal");
-let methodtextid = document.getElementById("method-text-id");
-let mastercard = document.getElementById("mastercard");
-let visa = document.getElementById("visa");
-newDIV.style.display = "none";
+// let cardImg = document.querySelectorAll(".card-img img");
+// let input = document.querySelector(".input");
+// let methodtext = document.querySelector(".method-text");
+// let newDIV = document.querySelector(".new");
+// let paypal = document.getElementById("pay-pal");
+// let methodtextid = document.getElementById("method-text-id");
+// let mastercard = document.getElementById("mastercard");
+// let visa = document.getElementById("visa");
+// newDIV.style.display = "none";
 
-cardImg.forEach(function (img) {
-  img.addEventListener("click", function () {
-    cardImg.forEach(function (item) {
-      item.classList.remove("border");
-    });
-    img.classList.add("border");
-    methodtextid.src = img.src;
-    if (paypal.className.includes("border")) {
-      newDIV.style.display = "block";
-      input.style.display = "none";
-    } else if (mastercard.className.includes("border")) {
-      input.style.display = "block";
-      newDIV.style.display = "none";
-    } else if (visa.className.includes("border")) {
-      input.style.display = "block";
-      newDIV.style.display = "none";
-    }
-  });
-});
+// cardImg.forEach(function (img) {
+//   img.addEventListener("click", function () {
+//     cardImg.forEach(function (item) {
+//       item.classList.remove("border");
+//     });
+//     img.classList.add("border");
+//     methodtextid.src = img.src;
+//     if (paypal.className.includes("border")) {
+//       newDIV.style.display = "block";
+//       input.style.display = "none";
+//     } else if (mastercard.className.includes("border")) {
+//       input.style.display = "block";
+//       newDIV.style.display = "none";
+//     } else if (visa.className.includes("border")) {
+//       input.style.display = "block";
+//       newDIV.style.display = "none";
+//     }
+//   });
+// });
 
-let closePage = document.querySelector(".close");
-let pagepayment = document.querySelector(".page-buy-payment");
-let planname = document.getElementById("plan-name");
+// let closePage = document.querySelector(".close");
+// let pagepayment = document.querySelector(".page-buy-payment");
+// let planname = document.getElementById("plan-name");
 
-let pagaBuy = document.querySelectorAll(".page-buy");
-pagepayment.style.display = "none";
-let statfive = true;
-pagaBuy.forEach(function (b) {
-  b.addEventListener("click", function (e) {
-    pagepayment.style.display = "block";
-    input.style.display = "none";
-    const h1Text = b.closest(".plan").querySelector(".name-plan").textContent;
-    planname.textContent = `اسم الباقه ${h1Text}`;
-    window.scrollTo({
-      top: 6129,
-      behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-    });
-  });
-});
-closePage.onclick = function () {
-  pagepayment.style.display = "none";
-  window.scrollTo({
-    top: 5225,
-    behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-  });
-};
-let imgstop = document.querySelector(".img-stop");
-let pris = document.querySelector(".pris");
+// let pagaBuy = document.querySelectorAll(".page-buy");
+// pagepayment.style.display = "none";
+// let statfive = true;
+// pagaBuy.forEach(function (b) {
+//   b.addEventListener("click", function (e) {
+//     pagepayment.style.display = "block";
+//     input.style.display = "none";
+//     const h1Text = b.closest(".plan").querySelector(".name-plan").textContent;
+//     planname.textContent = `اسم الباقه ${h1Text}`;
+//     window.scrollTo({
+//       top: 6129,
+//       behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+//     });
+//   });
+// });
+// closePage.onclick = function () {
+//   pagepayment.style.display = "none";
+//   window.scrollTo({
+//     top: 5225,
+//     behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+//   });
+// };
+// let imgstop = document.querySelector(".img-stop");
+// let pris = document.querySelector(".pris");
 
-pris.style.display = "none";
+// pris.style.display = "none";
 
-imgstop.onclick = function () {
-  const boxImg = document.querySelector(".box-game .box-img-n");
-  boxImg.style.setProperty("--before-w", "0"); // تغيير الخلفية للون الأحمر
-  boxImg.style.setProperty("--before-h", "0"); // تغيير الخلفية للون الأحمر
-  this.style.transform = "scale(0)";
-  pris.style.display = "block";
-  setTimeout(function () {
-    pris.style.opacity = "0";
-    pris.style.transform = "scale(0)";
-  }, 3000);
-};
+// imgstop.onclick = function () {
+//   const boxImg = document.querySelector(".box-game .box-img-n");
+//   boxImg.style.setProperty("--before-w", "0"); // تغيير الخلفية للون الأحمر
+//   boxImg.style.setProperty("--before-h", "0"); // تغيير الخلفية للون الأحمر
+//   this.style.transform = "scale(0)";
+//   pris.style.display = "block";
+//   setTimeout(function () {
+//     pris.style.opacity = "0";
+//     pris.style.transform = "scale(0)";
+//   }, 3000);
+// };
 
-// onform.onsubmit() = function () {
-//   onform.preventDefault();
+// // onform.onsubmit() = function () {
+// //   onform.preventDefault();
+// // }
+// let onform = document.querySelector(".onform");
+// let inputgav = document.querySelector(".text");
+// let ver = document.querySelector(".ver");
+// let vide = document.querySelector(".vide");
+// let inputText = document.getElementById("inputText");
+// let submitButton = document.getElementById("submit"); // جلب زر الإرسال
+// let i = document.querySelector(".ico");
+// let iT = document.querySelector(".fa-check");
+// let email = document.getElementById("email-value");
+// vide.style.opacity = "0";
+// ver.style.zIndex = "-5000000";
+
+// // استرجاع القيمة من localStorage عند تحميل الصفحة
+// let storedValue = localStorage.getItem("value");
+// if (storedValue) {
+//   email.textContent = `الحساب المشارك ${storedValue}`; // عرض القيمة المخزنة في الـ email
 // }
-let onform = document.querySelector(".onform");
-let inputgav = document.querySelector(".text");
-let ver = document.querySelector(".ver");
-let vide = document.querySelector(".vide");
-let inputText = document.getElementById("inputText");
-let submitButton = document.getElementById("submit"); // جلب زر الإرسال
-let i = document.querySelector(".ico");
-let iT = document.querySelector(".fa-check");
-let email = document.getElementById("email-value");
-vide.style.opacity = "0";
-ver.style.zIndex = "-5000000";
 
-// استرجاع القيمة من localStorage عند تحميل الصفحة
-let storedValue = localStorage.getItem("value");
-if (storedValue) {
-  email.textContent = `الحساب المشارك ${storedValue}`; // عرض القيمة المخزنة في الـ email
-}
+// onform.addEventListener("submit", function (e) {
+//   e.preventDefault(); // منع السلوك الافتراضي
 
-onform.addEventListener("submit", function (e) {
-  e.preventDefault(); // منع السلوك الافتراضي
+//   if (inputText.value === "") {
+//     alert("Please fill out the field.");
+//   } else {
+//     // تعطيل زر الإرسال
+//     submitButton.disabled = true;
+//     submitButton.innerText = "Sending..."; // تغيير النص أثناء الإرسال
 
-  if (inputText.value === "") {
-    alert("Please fill out the field.");
-  } else {
-    // تعطيل زر الإرسال
-    submitButton.disabled = true;
-    submitButton.innerText = "Sending..."; // تغيير النص أثناء الإرسال
+//     // رابط Google Apps Script اللي نشرته
+//     const scriptURL =
+//       "https://script.google.com/macros/s/AKfycbwz3TJxym8mblzUHffk_4TwrWY4zjmpigdEX4vKwG-IAjKVVtEV-pN2mFuRO1J7MA3R/exec";
 
-    // رابط Google Apps Script اللي نشرته
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwz3TJxym8mblzUHffk_4TwrWY4zjmpigdEX4vKwG-IAjKVVtEV-pN2mFuRO1J7MA3R/exec";
+//     fetch(scriptURL, {
+//       method: "POST",
+//       body: new URLSearchParams({ value: inputText.value }),
+//     })
+//       .then((response) => response.text())
+//       .then((data) => {
+//         console.log("Success:", data);
 
-    fetch(scriptURL, {
-      method: "POST",
-      body: new URLSearchParams({ value: inputText.value }),
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        console.log("Success:", data);
+//         let overlay = document.createElement("div");
 
-        let overlay = document.createElement("div");
+//         overlay.className = "Twooverlay";
+//         vide.style.opacity = "1";
 
-        overlay.className = "Twooverlay";
-        vide.style.opacity = "1";
+//         inputgav.appendChild(overlay);
 
-        inputgav.appendChild(overlay);
+//         setTimeout(function () {
+//           overlay.remove();
+//           vide.style.opacity = "0";
+//         }, 3000);
+//         i.style.transform = "scale(1)";
+//         ver.style.zIndex = "5000000";
+//         iT.style.opacity = "1";
+//         i.style.opacity = "1";
+//         i.style.animationPlayState = "running";
 
-        setTimeout(function () {
-          overlay.remove();
-          vide.style.opacity = "0";
-        }, 3000);
-        i.style.transform = "scale(1)";
-        ver.style.zIndex = "5000000";
-        iT.style.opacity = "1";
-        i.style.opacity = "1";
-        i.style.animationPlayState = "running";
+//         let inputTextValue = inputText.value; // الحصول على القيمة من الحقل
+//         localStorage.setItem("value", inputTextValue); // تخزين القيمة في الـ localStorage
 
-        let inputTextValue = inputText.value; // الحصول على القيمة من الحقل
-        localStorage.setItem("value", inputTextValue); // تخزين القيمة في الـ localStorage
+//         // عرض القيمة المخزنة في الـ email
+//         email.textContent = `الحساب المشارك ${inputTextValue}`;
 
-        // عرض القيمة المخزنة في الـ email
-        email.textContent = `الحساب المشارك ${inputTextValue}`;
+//         inputText.value = ""; // إفراغ حقل الإدخال
+//       })
+//       .catch((error) => {
+//         console.error("Error:", error);
+//         alert("حدث خطأ أثناء الإرسال. حاول مرة أخرى.");
+//       })
+//       .finally(() => {
+//         // إعادة تفعيل زر الإرسال
+//         submitButton.disabled = false;
+//         submitButton.innerText = "Send"; // إعادة النص لحالته الأصلية
+//       });
+//   }
+// });
 
-        inputText.value = ""; // إفراغ حقل الإدخال
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("حدث خطأ أثناء الإرسال. حاول مرة أخرى.");
-      })
-      .finally(() => {
-        // إعادة تفعيل زر الإرسال
-        submitButton.disabled = false;
-        submitButton.innerText = "Send"; // إعادة النص لحالته الأصلية
-      });
-  }
-});
+// let iconDown = document.querySelector(".icon-dwon");
+// let footer = document.querySelector(".footer");
+// let endsoch = document.querySelectorAll(".box-end");
+// console.log(endsoch);
 
-let iconDown = document.querySelector(".icon-dwon");
-let footer = document.querySelector(".footer");
-let endsoch = document.querySelectorAll(".box-end");
-console.log(endsoch);
+// iconDown.onclick = function (e) {
+//   endsoch.forEach(function (soh) {
+//     soh.classList.toggle("scale");
+//     footer.classList.toggle("height");
+//   });
+//   if (!footer.classList.contains("height")) {
+//     window.scrollTo({
+//       top: 8371,
+//       behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+//     });
+//   }
+// };
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 390) {
+//     about.style.transform = "scale(1)";
+//   }
+// });
+// // 8371;
 
-iconDown.onclick = function (e) {
-  endsoch.forEach(function (soh) {
-    soh.classList.toggle("scale");
-    footer.classList.toggle("height");
-  });
-  if (!footer.classList.contains("height")) {
-    window.scrollTo({
-      top: 8371,
-      behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-    });
-  }
-};
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 390) {
-    about.style.transform = "scale(1)";
-  }
-});
-// 8371;
-
-let forTop = document.querySelector(".forTop");
-forTop.onclick = function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
-  });
-};
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 0) {
-    forTop.style.display = "block";
-  } else {
-    forTop.style.display = "none";
-  }
-});
+// let forTop = document.querySelector(".forTop");
+// forTop.onclick = function () {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth", // هذه الخاصية تجعل التمرير يكون ناعماً
+//   });
+// };
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 0) {
+//     forTop.style.display = "block";
+//   } else {
+//     forTop.style.display = "none";
+//   }
+// });
